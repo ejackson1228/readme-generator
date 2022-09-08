@@ -48,14 +48,14 @@ const questions =
     },
     {
         type: 'input',
-        name: 'credits',
+        name: 'contributors',
         message: 'List all collaborators (if any) with links to their Github. \n If you used any third-party assets that require attribution, list links to their primary web presence.'
     },
     {
         type: 'list',
         name: 'license',
         message: 'Please choose an appropriate license for this project: \n if you need help choosing a license, please refer to: (https://choosealicense.com/) ',
-        choices: ["MIT", "Open", "ISC", "Mozilla", "GNU", "Apache", "Academic"]
+        choices: ["MIT", "CDDL", "ISC", "Mozilla", "GNU", "Apache", "Academic"]
     },
     {
         type: 'input',
