@@ -1,10 +1,11 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const fileName = `readME.md`;
 // TODO: Create an array of questions for user input
 const questions = 
-    inquirer.prompt([
+    [
     {
         type: 'input',
         name: 'title',
@@ -12,7 +13,7 @@ const questions =
         validate: projectNameInput => {
             if (projectNameInput) {
                 return true;
-            } else {
+            } else if (!projectNameInput){
                 console.log("Please enter your project name!")
                 return false;
             }
@@ -67,7 +68,7 @@ const questions =
         name: 'email',
         message: 'Please provide an email for additional questions regarding your project:'
     }
-]);
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -82,12 +83,11 @@ function init() {
         .then(answers => {
             //do stuff with answers
             console.log(answers)
-            generateMarkdown(data);
+            // generateMarkdown(answers);
             // after all answers are collected, write to file
 
             // TODO: build a string that uses our answers to generate some markdown and write that to our file as the "data" parameter. (replaces the test values below)
-            const finalAnswers = JSON.stringify(answers)
-                writeToFile('ReadME.md', finalAnswers)
+                writeToFile('ReadME.md', generateMarkdown(answers))
         });
 }
 
