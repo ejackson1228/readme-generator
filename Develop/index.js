@@ -55,7 +55,7 @@ const questions =
         type: 'list',
         name: 'license',
         message: 'Please choose an appropriate license for this project: \n if you need help choosing a license, please refer to: (https://choosealicense.com/) ',
-        choices: ["MIT", "CDDL", "ISC", "Mozilla", "GNU", "Apache", "Academic"]
+        choices: ["MIT", "Apache", "ISC", "Mozilla", "GNU GPL v3", "Eclipse"]
     },
     {
         type: 'input',
