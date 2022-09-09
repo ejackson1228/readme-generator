@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const fileName = `readME.md`;
 // TODO: Create an array of questions for user input
 const questions = 
     [
@@ -61,7 +60,7 @@ const questions =
     {
         type: 'input',
         name: 'github',
-        message: 'Please provide a link to your github account for additional questions regarding your project:'
+        message: 'Please provide your github username for additional questions regarding your project:'
     },
     {
         type: 'input',

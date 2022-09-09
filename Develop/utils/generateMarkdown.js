@@ -107,7 +107,7 @@ ${data.contributors}
 ${data.test}
 
 ## Questions? Contact me:
-GitHub: ${data.github} <br>
+GitHub: https://github.com/${data.github}/ <br>
 Email: ${data.email}
 
 `;

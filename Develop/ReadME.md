@@ -1,8 +1,8 @@
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] 
-# <h1 align="center">ReadMe-generator</h1>
+ [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)] 
+# <h1 align="center">readme-generator</h1>
 
 ## Description
-this application generates a readme based on user input criteria
+generates a professional readme based on user prompted info
   
 ## Table of Contents
   - [Description](#description)
@@ -14,21 +14,21 @@ this application generates a readme based on user input criteria
   - [Questions](#questions)
 
 ## Installation
-node and inquirer
+download index.js and genaratemardkwon.js with node, npm, and inquirer
 
 ## Usage
-install node, install inquirer
+in the CLI, call 'node index' and answer the prompt with info about your project
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]This application is protected under the MIT license. (https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]This application is covered under the Apache license. (https://opensource.org/licenses/Apache-2.0)
 
 ## Contributors
-node, inquirer
+node, npm, inquirer
 
 ## Tests
-test
+no tests
 
 ## Questions? Contact me:
-GitHub: ejackson1228 <br>
+GitHub: https://github.com/ejackson1228/ <br>
 Email: ejackson1228@gmail.com
 
