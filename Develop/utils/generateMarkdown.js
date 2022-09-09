@@ -23,7 +23,6 @@ function renderLicenseBadge(data) {
   } else if (licenseType === '') {
     licenseBadge ='';
   }
-  console.log(licenseBadge);
   return licenseBadge;
 }
 
@@ -51,21 +50,20 @@ function renderLicenseLink(data) {
     licenseLink = `(https://opensource.org/licenses/EPL-1.0)`
   } else if (licenseType === '') {
     licenseLink ='';
-  }
-  console.log(licenseLink); 
+  } 
   return licenseLink; 
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
-  const badge = 
-  const link = 
-  console.log(badge)
-  console.log(link)
+  const badge = renderLicenseBadge(data);
+  const link = renderLicenseLink(data);
+  console.log(badge);
+  console.log(link);
   let licenseSection = '';
   if (link !== ''  && badge !== '') {
-    licenseSection = badge  + 'This application is protected under the ' + data.license + '. ' + link;
+    licenseSection = badge  + 'This application is covered under the ' + data.license + ' license. ' + link;
     return licenseSection
   } else {
     licenseSection = '';
@@ -76,8 +74,9 @@ function renderLicenseSection(data) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  renderLicenseSection()
-  return ` ${renderLicenseBadge.licenseBadge} 
+  const licenseSection = renderLicenseSection(data);
+  const displayBadge = renderLicenseBadge(data);
+  return ` ${displayBadge} 
 # <h1 align="center">${data.title}</h1>
 
 ## Description
@@ -99,7 +98,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${(renderLicenseSection.licenseSection)}
+${licenseSection}
 
 ## Contributors
 ${data.contributors}

@@ -1,8 +1,8 @@
- undefined 
-# <h1 align="center">name</h1>
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] 
+# <h1 align="center">ReadMe-generator</h1>
 
 ## Description
-desd
+this application generates a readme based on user input criteria
   
 ## Table of Contents
   - [Description](#description)
@@ -14,21 +14,21 @@ desd
   - [Questions](#questions)
 
 ## Installation
-fdeq
+node and inquirer
 
 ## Usage
-fds
+install node, install inquirer
 
 ## License
-undefined
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]This application is protected under the MIT license. (https://opensource.org/licenses/MIT)
 
 ## Contributors
-bgds
+node, inquirer
 
 ## Tests
-bge
+test
 
 ## Questions? Contact me:
-GitHub: gfds <br>
-Email: gfsd
+GitHub: ejackson1228 <br>
+Email: ejackson1228@gmail.com
 
