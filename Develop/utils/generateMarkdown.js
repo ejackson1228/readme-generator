@@ -23,6 +23,7 @@ function renderLicenseBadge(data) {
   } else if (licenseType === '') {
     licenseBadge ='';
   }
+  console.log(licenseBadge);
   return licenseBadge;
 }
 
@@ -51,27 +52,32 @@ function renderLicenseLink(data) {
   } else if (licenseType === '') {
     licenseLink ='';
   }
-  return licenseLink;
+  console.log(licenseLink); 
+  return licenseLink; 
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
-  renderLicenseBadge(data);
-  renderLicenseLink(data);
+  const badge = 
+  const link = 
+  console.log(badge)
+  console.log(link)
   let licenseSection = '';
-  if (renderLicenseLink !== ''  && renderLicenseBadge !== '') {
-    licenseSection = `${renderLicenseBadge}  <br> This application is covered by the ${data.license} license. ${renderLicenseLink}`;
+  if (link !== ''  && badge !== '') {
+    licenseSection = badge  + 'This application is protected under the ' + data.license + '. ' + link;
+    return licenseSection
   } else {
     licenseSection = '';
+    return licenseSection;
   }
-  return licenseSection;
+  
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  renderLicenseSection(data)
-  return ` ${data.licenseBadge}
+  renderLicenseSection()
+  return ` ${renderLicenseBadge.licenseBadge} 
 # <h1 align="center">${data.title}</h1>
 
 ## Description
@@ -93,7 +99,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${data.licenseSection}
+${(renderLicenseSection.licenseSection)}
 
 ## Contributors
 ${data.contributors}
